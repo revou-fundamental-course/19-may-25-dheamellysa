@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #ffe6f0;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 320px;
+  text-align: center;
+  border: 3px dashed #ffb6c1;
+}
+
+h1 {
+  color: #ff69b4;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+label {
+  color: #555;
+  font-size: 14px;
+  text-align: left;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="number"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ffcce5;
+  border-radius: 12px;
+  background-color: #fff;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+.options {
+  text-align: left;
+  margin: 15px 0;
+}
+
+.options label {
+  color: #d63384;
+  font-size: 14px;
+}
+
+.buttons {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #ff69b4;
+}
+/* Animasi masuk kontainer */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeInUp 1s ease;
+}
+
+/* Efek animasi input & hasil */
+input, textarea {
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff99cc;
+  box-shadow: 0 0 8px #ffb6c1;
+  outline: none;
+}
+
+/* Tombol animasi lembut */
+.buttons button {
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+  }
